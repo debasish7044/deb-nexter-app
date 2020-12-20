@@ -1,0 +1,86 @@
+/*
+Error: Invalid CSS after "...-template-rows:": expected expression (e.g. 1px, bold), was "[head-start] 80..."
+        on line 69 of D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/_base.scss
+        from line 1 of D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/main.scss
+
+64:   line-height: 1.6;
+65: }
+66: 
+67: .container{
+68:   display: grid;
+69:   grid-template-rows:[head-start] 80vh[head-end] min-content 40vw repeat(3, min-content);
+70:   grid-template-columns: [full-start] minmax(6rem ,1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem)[col-end]) [center-end] minmax(6rem ,1fr) [full-end]; 
+71: 
+72: 
+73:   @media only screen and (max-width:$bp-large) {
+74: 
+
+Backtrace:
+D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/_base.scss:69
+D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/main.scss:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/script/parser.rb:710:in `assert_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/script/parser.rb:75:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1063:in `sass_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:909:in `value!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:778:in `block in try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:44:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/compass:22:in `load'
+C:/Program Files (x86)/Koala/bin/compass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-template-rows:\": expected expression (e.g. 1px, bold), was \"[head-start] 80...\"\A         on line 69 of D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/_base.scss\A         from line 1 of D:/courses/Debsish  Webstie template/frontend website project/Deb-practice-project/nexter/sass/main.scss\A \A 64:   line-height: 1.6;\A 65: }\A 66: \A 67: .container{\A 68:   display: grid;\A 69:   grid-template-rows:[head-start] 80vh[head-end] min-content 40vw repeat(3, min-content);\A 70:   grid-template-columns: [full-start] minmax(6rem ,1fr) [center-start] repeat(8, [col-start] minmax(min-content,14rem)[col-end]) [center-end] minmax(6rem ,1fr) [full-end]; \A 71: \A 72: \A 73:   @media only screen and (max-width:$bp-large) {\A 74: "; }
